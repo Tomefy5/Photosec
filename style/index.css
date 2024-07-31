@@ -1,0 +1,275 @@
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    font-size:  1rem;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.prem-block-principal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1f;
+}
+
+.block-photography-studio {
+    background-color: #eeeeee;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-nav-et-sitename {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-btnnav {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.btnnav {
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btnnav i {
+    cursor: pointer;
+}
+
+.container-sitename {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sitename {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container-titre-photography-et-btnread {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+}
+
+.container-titre-photography {
+    height: auto;
+    width: 300px;
+}
+
+.titre-photography-studio {
+    text-wrap: wrap;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgb(39, 38, 38);
+}
+
+.container-btnread {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btnread {
+    width: 60%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #85310c;
+    color: white;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    border: 1px solid #85310c;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btnread:hover {
+    color: #85310c;
+    background-color: transparent;
+    border: 1px solid #85310c;
+
+}
+
+
+.block-diaporama {
+    background-color: grey;
+    background-image: url(../images/slider-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.container-call-us {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+
+.btn-call-us {
+    padding: 15px;
+    border: none;
+    outline: none;
+    width: 180px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 1px solid #eeeeee;
+    transition: background-color 0.5s ease;
+}
+
+.btn-call-us:hover {
+    background-color: transparent;
+    color: #eeeeee;
+}
+
+.container-arrows {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85310c;
+    border-radius: 2px;
+    transition: background-color 0.4s ease;
+}
+
+.container-arrow:hover {
+    background-color: #eeeeee;
+}
+
+
+.container-arrow i {
+    font-weight: 900;
+    font-size: 1rem;
+    color: #eeeeee;
+    padding: 15px 20px;
+    transition: color 0.4s ease;
+}
+
+.container-arrow i:hover {
+    color: #85310c;
+}
+
+.container-slide-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8f401bee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.slide-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-10%);
+}
+
+.container-item-nav {
+    width: 200px;
+    border: 2px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.container-item-nav:hover {
+    background-color: #eeeeee;
+}
+
+.container-item-nav > a {
+    text-decoration: none;
+}
+
+.item-nav {
+    display: inline-block;
+    width: 200px;
+    font-weight: 500;
+    color: #eeeeee;
+    padding: 18px;
+    line-height: 100%;
+    text-align: center;
+    transition: color 0.4s ease;
+}
+
+.item-nav:hover {
+    color: black;
+}
+
+.container-btncross {
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    left: 50px;
+    width: auto;
+    height: auto;
+}
+
+.btncross {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #eeeeee;
+    cursor: pointer;
+}
